@@ -1,3 +1,9 @@
+#Imports for the function:
+import numpy as np
+import pandas as pd
+from env import get_db_url
+import os
+
 #Get the Telco data from the database and join all four tables into the one dataframe
 def get_telco_data():
     filename = 'telco.csv'

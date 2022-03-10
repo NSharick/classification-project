@@ -10,3 +10,26 @@
 - The project wil conclude with a final report that summarizes the project's findings and includes the code necessary to replicate the findings and a .csv file with predictions of churn based on the best performing model
 
 - 
+
+### Initial Hypothesis / Questions:
+
+- 
+
+### Data Dictionary:
+
+- 
+
+### Project Planning:
+
+- 
+
+### How to Reproduce this Project and Findings:
+
+- 
+
+### Key Findings, Reccomendations, and Takeaways:
+
+- 
+
+
+
