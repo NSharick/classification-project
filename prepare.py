@@ -30,6 +30,7 @@ def prep_telco(df):
     df['churn'] = df['churn'].apply(lambda x: 1 if x == 'Yes' else 0)
     #encode the categorical columns
     encode_cols = [col for col in df.columns if df[col].dtype == 'O']
+    encode_cols.remove('customer_id')
     for col in encode_cols:
         dummie_df = pd.get_dummies(df[col], prefix = df[col].name, drop_first = True)
         df = pd.concat([df, dummie_df], axis=1)
