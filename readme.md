@@ -11,8 +11,6 @@
 
 - The project wil conclude with a final report that summarizes the project's findings and includes the code necessary to replicate the findings and a .csv file with predictions of churn based on the best performing model
 
-- 
-
 ### Initial Questions:
 
 - Is a customer's chosen payment method related to customer churn?
@@ -37,7 +35,37 @@
 
 ### Project Planning:
 
-- 
+- First, write a function to pull the correct dataset from the database and save it as a csv in the local directory.
+
+- Save the data acquision function in a seperate acquire.py file for future use
+
+- Then, write a function that prepares the data by dealing with missing values, removing unneeded columns, and encoding categorical variables as needed for use in machine learning models
+
+- The data preparation function should also split the dataset into train, validate, and test sets for modeling
+
+- Save the data preparation function in a acquire.py file for later use
+
+- Document four specific questions that will be asked of the data to guide the data exploration
+
+- Explore the data by visualizing key features related to the questions and how they relate to customer churn
+
+- Continue to explore the data by running statistical tests to verify statistical significance of the relationships between the variables
+
+- Document initial takeaways from the data exploration
+
+- Develop initial classification machine learning models using the features identified in the exploration phase
+
+- Refine those models using the train dataset by adjusting feature input and hyperparameter values
+
+- Document the models performance on the train dataset
+
+- Choose the three best performing models to validate using the validate dataset
+
+- Document the performance of the models on the validate dataset
+
+- Choose the model that performed the best and best fit the needs of the buisness question and test it using the test dataset
+
+- Document key findings, recomendations, and next steps
 
 ### How to Reproduce this Project and Findings:
 
@@ -53,9 +81,45 @@ To reproduce my findings on this project you will need:
 
 - Libraries used are numpy, pandas, seaborn, sklearn, and matplotlib. All imports are included at the top of the notebook.
 
-### Key Findings, Reccomendations, and Takeaways:
+### Key Findings:
 
-- 
+- Customer Payment type:
+    - Customers with the electronic check payment method had a higher churn rate than those with other payment methods and a higher churn rate than the overall customer churn rate.
+        
+    - Statistical testing showed that customer payment type is not independent of customer churn rate
+    
+- Internet Service Type:
+    - Customers with fiber optic internet service had a higher curn rate than those with other internet service types and a higher churn rate than the overall customer churn rate
+    
+    - Statistical testing showed that customer internet service type is not independent of customer churn rate
+    
+- Participation in Support and Backup Programs:
+    - Customers who do not participate in our tech support and/or our online backup programs had a higher churn rate than those that did participate and a higher churn rate than the overall customer churn rate
+    
+    - Statistical testing showed that customer participation in our support and backup programs is not independent of customer churn rate
+    
+- Participation in Security and Protection Programs:
+    - Customers who do not participate in our online security and/or our device protection programs had a higher churn rate than those that did participate and a higher churn rate than the overall customer churn rate
+    
+    - Statistical testing showed that customer participation in our security and protection programs is not independent of customer churn rate
+    
+
+### Reccomendations:
+
+- For churn rate related to customer payment type I reccomend incentivizing customers to switch to one of our two automatic payment methods
+
+- For churn rate related to internet service type I recommend first collecting more information on customer opinion of our fiber optic internet service. Since this is a better quality service than the dsl it is suprising that customers with this type of service have a significantly higher churn rate. There may also be a connection between fiber optic service issues and customers not participating in tech support to get things fixed.
+
+- For particiaption in our support/backup and our security//protection programs I reccomend we focus on marketing targeted at increased customer participation and engagement
+
+
+### Next Steps:
+
+- Use the data/information produced from the above recomended actions to bolster our understanding of drivers of customer churn and to refine our machine learning models to better predict customer churn
+
+- Further investigate features and feature engineering that could help increase our model's predictive accuracy
+
+- Further investigate the interrelationship of customer features could produce additional drivers of customer churn and actionable items to reduce that churn
 
 
 
