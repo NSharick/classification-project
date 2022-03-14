@@ -103,6 +103,10 @@ To reproduce my findings on this project you will need:
     
     - Statistical testing showed that customer participation in our security and protection programs is not independent of customer churn rate
     
+- Predictive Modeling (machine learning):
+    - The best performing model was a K-Nearest Neighbors model with a n-neighbors value of 5
+    
+    - The final test of this model on the 'test' dataset produced an accuracy score of .76 which is 3% above baseline values and a recall score of .53 which was notably higher than the recall value of the other models in the validate stage
 
 ### Reccomendations:
 
@@ -115,11 +119,13 @@ To reproduce my findings on this project you will need:
 
 ### Next Steps:
 
-- Use the data/information produced from the above recomended actions to bolster our understanding of drivers of customer churn and to refine our machine learning models to better predict customer churn
+- Since our highest performing model had an accuracy score only 3% higher than baseline the focus of further work would be on refining the model to increase predictive accuracy
 
-- Further investigate features and feature engineering that could help increase our model's predictive accuracy
+- To do this:
+    - I would use the data/information produced from the above recomended actions to bolster our understanding of drivers of customer churn and to refine our machine learning models to better predict customer churn
 
-- Further investigate the interrelationship of customer features could produce additional drivers of customer churn and actionable items to reduce that churn
+    - I would further investigate features and feature engineering that could help increase our model's predictive accuracy
 
+    - I would further investigate the interrelationship of customer features could produce additional drivers of customer churn and actionable items to reduce that churn
 
 
